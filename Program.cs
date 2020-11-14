@@ -7,20 +7,26 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a  number n:");
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter a  number:n1");
-            int n1 = Convert.ToInt32(Console.ReadLine());
 
+            /* Console.WriteLine("Enter a  number n:");
+             int n = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter a  number:n1");
+             int n1 = Convert.ToInt32(Console.ReadLine()); */
+
+            Console.WriteLine("Enter a  String:");
+            String s1 = Console.ReadLine();
 
             // no proper spacing 
             // too many extra lines
-          //  int a = method1(n, n1);
 
-         //   Console.WriteLine(a);
+            //  int a = method1(n, n1);
 
-            bool b = method2(n, n1);
-            Console.WriteLine(b);
+            //   Console.WriteLine(a);
+
+            // bool b = method2(n, n1);
+            // Console.WriteLine(b);
+
+            Console.WriteLine(Method3(s1));
 
 
         }
@@ -47,6 +53,20 @@ namespace ConsoleApp1
             else
             {
                 return false;
+            }
+        }
+
+
+        public static String Method3(String s1)
+        {
+            if (s1.StartsWith("if"))
+            {
+                return s1;
+            }
+            else
+            {
+                string s2 = string.Concat("if", s1);
+                return s2;
             }
         }
     }
