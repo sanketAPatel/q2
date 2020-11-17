@@ -15,6 +15,8 @@ namespace ConsoleApp1
 
             Console.WriteLine("Enter a  String:");
             String s1 = Console.ReadLine();
+            Console.WriteLine("Enter a  position you want to remove:n1");
+            int n1 = Convert.ToInt32(Console.ReadLine());
 
             // no proper spacing 
             // too many extra lines
@@ -26,7 +28,8 @@ namespace ConsoleApp1
             // bool b = method2(n, n1);
             // Console.WriteLine(b);
 
-            Console.WriteLine(Method3(s1));
+            // Console.WriteLine(Method3(s1));
+            Console.WriteLine(Method4(s1, n1));
 
 
         }
@@ -65,9 +68,18 @@ namespace ConsoleApp1
             }
             else
             {
+
                 string s2 = string.Concat("if", s1);
                 return s2;
             }
+        }
+
+
+        public static String Method4(String s1, int n1)
+        {
+
+            String s2 = (s1.Remove(n1));
+            return s2;
         }
     }
 }
