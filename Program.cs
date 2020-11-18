@@ -40,18 +40,14 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(a[i]);
             }
-           // method6(a[n], y);
+            // method6(a[n], y);
         }
-
-
-
-
 
 
         public static void Method5(String s1)
         {
             int len = s1.Length;
-            Console.WriteLine(s1[len - 1] + s1.Substring(1,len - 2) + s1[0]);
+            Console.WriteLine(s1[len - 1] + s1.Substring(1, len - 2) + s1[0]);
         }
 
         public static String Method4(String s1, int n1)
@@ -95,9 +91,5 @@ namespace ConsoleApp1
                 return (n + n1);
             }
         }
-
-
-
-
     }
 }
