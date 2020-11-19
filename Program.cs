@@ -13,7 +13,7 @@ namespace ConsoleApp1
             // Console.WriteLine("Enter a  number:n1");
             // //int n1 = Convert.ToInt32(Console.ReadLine()); */
 
-            //Console.WriteLine("Enter a  String:");
+            Console.WriteLine("Enter a  String:");
             String s1 = Console.ReadLine();
             //Console.WriteLine("Enter a  position you want to remove:n1");
             //int n1 = Convert.ToInt32(Console.ReadLine());
@@ -24,25 +24,27 @@ namespace ConsoleApp1
             // Console.WriteLine(a);
             // bool b = method2(n, n1);
             // Console.WriteLine(b);
-            // Console.WriteLine(Method3(s1));*/
+            // Console.WriteLine(Method3(s1));
             // Console.WriteLine(Method4(s1, n1));
 
-            Method5(s1);
+            // Method5(s1);
 
+            Console.WriteLine(Method6(s1));
 
-            Console.WriteLine("Enter how many array elements you want:");
-            int[] a = null;
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the left shift you want in an array :");
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i <= n; i++)
-            {
-                Console.WriteLine(a[i]);
-            }
-            // method6(a[n], y);
         }
+        public static String Method6(String s1)
+        {
+            if (s1.Length > 2)
+            {
+                String s2 = String.Concat(" ", s1, " ", s1, " ", s1, " ", s1, " ");
+                return s2;
+            }
+            else
+            {
+                return s1;
+            }
 
+        }
 
         public static void Method5(String s1)
         {
