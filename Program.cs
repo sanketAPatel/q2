@@ -28,10 +28,19 @@ namespace ConsoleApp1
             // Console.WriteLine(Method4(s1, n1));
 
             // Method5(s1);
+            // Console.WriteLine(Method6(s1));
 
-            Console.WriteLine(Method6(s1));
+            Console.WriteLine(Method7(s1));
+
 
         }
+
+        public static String Method7(String s1)
+        {
+            String s2 = s1.Substring(s1.Length - 1);
+            return String.Concat(s2 + s1 + s2);
+        }
+
         public static String Method6(String s1)
         {
             if (s1.Length > 2)
