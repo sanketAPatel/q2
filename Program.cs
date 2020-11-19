@@ -29,7 +29,7 @@ namespace ConsoleApp1
             // Method5(s1);
             // Console.WriteLine(Method6(s1));
             // Console.WriteLine(Method7(s1));
-              Console.WriteLine(Method8(s1));
+            Console.WriteLine(Method8(s1));
 
         }
 
@@ -40,9 +40,9 @@ namespace ConsoleApp1
                 String s2 = s1.Substring(0, 3);
                 return String.Concat(s2 + s1 + s2);
             }
-            else 
+            else
             {
-                return String.Concat(s1+" " + s1 + " " + s1);
+                return String.Concat(s1 + " " + s1 + " " + s1);
             }
         }
 
