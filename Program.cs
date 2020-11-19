@@ -32,14 +32,46 @@ namespace ConsoleApp1
             //bool M9 = Method9(s1);
             //Console.WriteLine(M9);
 
+            //Console.WriteLine("enter three int values 4 Question # 10");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int y = Convert.ToInt32(Console.ReadLine());
+            //int z = Convert.ToInt32(Console.ReadLine());
+            //bool M10 = Method10(x, y, z);
+            //Console.WriteLine(M10);
 
-            Console.WriteLine("enter three int values 4 Question # 10")
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-            int z = Convert.ToInt32(Console.ReadLine());
-            bool M10 = Method10(x, y, z);
-            Console.WriteLine(M10);
+            Console.WriteLine("enter size of an array you want for 11");
+            int size = Convert.ToInt32(Console.ReadLine());
+            int[] array1 = new int[size];
+            Console.WriteLine("enter rotation of an array you want");
+            int rotation = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < array1.Length; i++)
+            {
+                array1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine(string.Join(", ", Method11(array1, rotation)));
+        }
 
+
+
+
+        public static int[] Method11(int[] array1, int rotation)
+        {
+            int[] array2 = new int[array1.Length];
+            for (int i = 0; i < array1.Length; i++)
+            {
+                int shift = i - rotation;
+                int  newRotation = array2.Length + shift;
+
+                if (shift >= 0)
+                {
+                    array2[shift] = array1[i];
+                }
+                else
+                {
+                    array2[newRotation] = array1[i];
+                }
+            }
+            return array2;
         }
 
 
@@ -53,12 +85,9 @@ namespace ConsoleApp1
             {
                 return false;
             }
-
         }
         public static Boolean Method9(String s1)
         {
-
-
             if ((s1.StartsWith("C#")) || (s1.StartsWith("C# Sharp")))
             {
                 return true;
@@ -99,7 +128,6 @@ namespace ConsoleApp1
             {
                 return s1;
             }
-
         }
 
         public static void Method5(String s1)
