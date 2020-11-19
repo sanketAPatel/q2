@@ -8,13 +8,12 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
 
-            ///* Console.WriteLine("Enter a  number n:");
+            /* Console.WriteLine("Enter a  number n:");
             // int n = Convert.ToInt32(Console.ReadLine());
             // Console.WriteLine("Enter a  number:n1");
-            // //int n1 = Convert.ToInt32(Console.ReadLine()); */
-
-            Console.WriteLine("Enter a  String:");
-            String s1 = Console.ReadLine();
+            // int n1 = Convert.ToInt32(Console.ReadLine()); */
+            //Console.WriteLine("Enter a  String:");
+            // String s1 = Console.ReadLine();
             //Console.WriteLine("Enter a  position you want to remove:n1");
             //int n1 = Convert.ToInt32(Console.ReadLine());
 
@@ -29,8 +28,45 @@ namespace ConsoleApp1
             // Method5(s1);
             // Console.WriteLine(Method6(s1));
             // Console.WriteLine(Method7(s1));
-            Console.WriteLine(Method8(s1));
+            //Console.WriteLine(Method8(s1));
+            //bool M9 = Method9(s1);
+            //Console.WriteLine(M9);
 
+
+            Console.WriteLine("enter three int values 4 Question # 10")
+            int x = Convert.ToInt32(Console.ReadLine());
+            int y = Convert.ToInt32(Console.ReadLine());
+            int z = Convert.ToInt32(Console.ReadLine());
+            bool M10 = Method10(x, y, z);
+            Console.WriteLine(M10);
+
+        }
+
+
+        public static Boolean Method10(int x, int y, int z)
+        {
+            if ((x >= 20 && x <= 50) || (y >= 20 && y <= 50) || (z >= 20 && z <= 50))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+        public static Boolean Method9(String s1)
+        {
+
+
+            if ((s1.StartsWith("C#")) || (s1.StartsWith("C# Sharp")))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static String Method8(String s1)
