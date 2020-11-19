@@ -26,13 +26,24 @@ namespace ConsoleApp1
             // Console.WriteLine(b);
             // Console.WriteLine(Method3(s1));
             // Console.WriteLine(Method4(s1, n1));
-
             // Method5(s1);
             // Console.WriteLine(Method6(s1));
+            // Console.WriteLine(Method7(s1));
+              Console.WriteLine(Method8(s1));
 
-            Console.WriteLine(Method7(s1));
+        }
 
-
+        public static String Method8(String s1)
+        {
+            if (s1.Length > 3)
+            {
+                String s2 = s1.Substring(0, 3);
+                return String.Concat(s2 + s1 + s2);
+            }
+            else 
+            {
+                return String.Concat(s1+" " + s1 + " " + s1);
+            }
         }
 
         public static String Method7(String s1)
