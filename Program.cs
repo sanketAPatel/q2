@@ -7,7 +7,6 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-
             /* Console.WriteLine("Enter a  number n:");
             // int n = Convert.ToInt32(Console.ReadLine());
             // Console.WriteLine("Enter a  number:n1");
@@ -15,17 +14,25 @@ namespace ConsoleApp1
             //Console.WriteLine("Enter a  String:");
             // String s1 = Console.ReadLine();
             //Console.WriteLine("Enter a  position you want to remove:n1");
-            //int n1 = Convert.ToInt32(Console.ReadLine());            
+            //int n1 = Convert.ToInt32(Console.ReadLine());           
             // int a = method1(n, n1);
             // Console.WriteLine(a);
+            
             // bool b = method2(n, n1);
             // Console.WriteLine(b);
+            
             // Console.WriteLine(Method3(s1));
+            
             // Console.WriteLine(Method4(s1, n1));
+            
             // Method5(s1);
+            
             // Console.WriteLine(Method6(s1));
+            
             // Console.WriteLine(Method7(s1));
+            
             //Console.WriteLine(Method8(s1));
+            
             //bool M9 = Method9(s1);
             //Console.WriteLine(M9);
 
@@ -49,10 +56,6 @@ namespace ConsoleApp1
 
 
         }
-
-
-
-
 
         public static int[] Method11(int[] array1, int rotation)
         {
