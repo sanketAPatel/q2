@@ -53,8 +53,6 @@ namespace ConsoleApp1
             //    array1[i] = Convert.ToInt32(Console.ReadLine());
             //}
             //Console.WriteLine(string.Join(",", Method11(array1, rotation)));
-
-
         }
 
         public static int[] Method11(int[] array1, int rotation)
