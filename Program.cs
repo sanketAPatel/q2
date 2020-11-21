@@ -14,28 +14,36 @@ namespace ConsoleApp1
             //Console.WriteLine("Enter a  String:");
             // String s1 = Console.ReadLine();
             //Console.WriteLine("Enter a  position you want to remove:n1");
+
             //int n1 = Convert.ToInt32(Console.ReadLine());           
             // int a = method1(n, n1);
             // Console.WriteLine(a);
-            
             // bool b = method2(n, n1);
             // Console.WriteLine(b);
-            
+
+            /* for question 3*/
             // Console.WriteLine(Method3(s1));
-            
+
+            /* for question 4*/
             // Console.WriteLine(Method4(s1, n1));
-            
+
+            /* for question 5*/
             // Method5(s1);
-            
+
+            /* for question 6*/
             // Console.WriteLine(Method6(s1));
-            
+
+            /* for question 7*/
             // Console.WriteLine(Method7(s1));
-            
+
+            /* for question 8*/
             //Console.WriteLine(Method8(s1));
-            
+
+            /* for question 9*/
             //bool M9 = Method9(s1);
             //Console.WriteLine(M9);
 
+            /* for question 10*/
             //Console.WriteLine("enter three int values 4 Question # 10");
             //int x = Convert.ToInt32(Console.ReadLine());
             //int y = Convert.ToInt32(Console.ReadLine());
@@ -43,6 +51,7 @@ namespace ConsoleApp1
             //bool M10 = Method10(x, y, z);
             //Console.WriteLine(M10);
 
+            /* for question 11*/
             //Console.WriteLine("enter size of an array you want for 11");
             //int size = Convert.ToInt32(Console.ReadLine());
             //int[] array1 = new int[size];
@@ -52,7 +61,30 @@ namespace ConsoleApp1
             //{
             //    array1[i] = Convert.ToInt32(Console.ReadLine());
             //}
-            //Console.WriteLine(string.Join(",", Method11(array1, rotation)));
+            //Console.WriteLine(string.Join(",", Method11(array1, rotation)));  
+
+            /* for question 12*/
+            Console.WriteLine("Enter a  String:");
+           
+            string s1 = Console.ReadLine();
+            while (s1.Length > 100) 
+            {
+                Console.WriteLine("minimum length is 100 please write agian:");
+
+            }
+            
+            Console.WriteLine("Enter a start Index n:");
+            int n = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter an end index :n1");
+            int n1 = Convert.ToInt32(Console.ReadLine()); 
+            Console.WriteLine(Method12(s1,n,n1));
+        }
+
+        public static string Method12(string s1, int n, int n1)
+        {
+           
+            return(s1.Substring(n, n1));
+
         }
 
         public static int[] Method11(int[] array1, int rotation)
@@ -98,7 +130,7 @@ namespace ConsoleApp1
          *@param String s1        
          *@return boolean
          */
-        public static Boolean Method9(String s1)
+        public static Boolean Method9(string s1)
         {
             if ((s1.StartsWith("C#")) || (s1.StartsWith("C# Sharp")))
             {
@@ -115,16 +147,16 @@ namespace ConsoleApp1
          *@param String s1
          *@return String
          */
-        public static String Method8(String s1)
+        public static string Method8(string s1)
         {
             if (s1.Length > 3)
             {
-                String s2 = s1.Substring(0, 3);
-                return String.Concat(s2 + s1 + s2);
+                string s2 = s1.Substring(0, 3);
+                return string.Concat(s2 + s1 + s2);
             }
             else
             {
-                return String.Concat(s1 + " " + s1 + " " + s1);
+                return string.Concat(s1 + " " + s1 + " " + s1);
             }
         }
 
@@ -132,10 +164,10 @@ namespace ConsoleApp1
          *@param String s1
          * @return String
          */
-        public static String Method7(String s1)
+        public static string Method7(String s1)
         {
-            String s2 = s1.Substring(s1.Length - 1);
-            return String.Concat(s2 + s1 + s2);
+            string s2 = s1.Substring(s1.Length - 1);
+            return string.Concat(s2 + s1 + s2);
         }
 
         /*Write a C# Sharp program to create a new string which is 4 copies of the 2 front characters of a given string.
@@ -143,11 +175,11 @@ namespace ConsoleApp1
          *@param String s1
          *@return String
          */
-        public static String Method6(String s1)
+        public static string Method6(string s1)
         {
             if (s1.Length > 2)
             {
-                String s2 = String.Concat(" ", s1, " ", s1, " ", s1, " ", s1, " ");
+                string s2 = string.Concat(" ", s1, " ", s1, " ", s1, " ", s1, " ");
                 return s2;
             }
             else
@@ -160,7 +192,7 @@ namespace ConsoleApp1
          *@param String s1
          *@return String
          */
-        public static void Method5(String s1)
+        public static void Method5(string s1)
         {
             int len = s1.Length;
             Console.WriteLine(s1[len - 1] + s1.Substring(1, len - 2) + s1[0]);
@@ -171,9 +203,9 @@ namespace ConsoleApp1
          *@param int n1
          * @return String
          */
-        public static String Method4(String s1, int n1)
+        public static string Method4(string s1, int n1)
         {
-            String s2 = (s1.Remove(n1));
+            string s2 = (s1.Remove(n1));
             return s2;
         }
 
@@ -182,7 +214,7 @@ namespace ConsoleApp1
          *@param String s1
          * @return String 
          */
-        public static String Method3(String s1)
+        public static string Method3(string s1)
         {
             if (s1.StartsWith("if"))
             {
