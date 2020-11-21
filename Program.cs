@@ -69,8 +69,7 @@ namespace ConsoleApp1
             while (s1.Length > 100) 
             {
                 Console.WriteLine("minimum length is 100 please write agian:");
-            }
-            
+            }            
             Console.WriteLine("Enter a start Index n:");
             int n = Convert.ToInt32(Console.ReadLine());
              Console.WriteLine("Enter an end index :n1");
