@@ -64,13 +64,11 @@ namespace ConsoleApp1
             //Console.WriteLine(string.Join(",", Method11(array1, rotation)));  
 
             /* for question 12*/
-            Console.WriteLine("Enter a  String:");
-           
+            Console.WriteLine("Enter a  String:");           
             string s1 = Console.ReadLine();
             while (s1.Length > 100) 
             {
                 Console.WriteLine("minimum length is 100 please write agian:");
-
             }
             
             Console.WriteLine("Enter a start Index n:");
@@ -81,10 +79,8 @@ namespace ConsoleApp1
         }
 
         public static string Method12(string s1, int n, int n1)
-        {
-           
+        {           
             return(s1.Substring(n, n1));
-
         }
 
         public static int[] Method11(int[] array1, int rotation)
