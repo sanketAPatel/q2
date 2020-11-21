@@ -64,22 +64,39 @@ namespace ConsoleApp1
             //Console.WriteLine(string.Join(",", Method11(array1, rotation)));  
 
             /* for question 12*/
-            Console.WriteLine("Enter a  String:");           
-            string s1 = Console.ReadLine();
-            while (s1.Length > 100) 
+            Console.WriteLine("Enter a  String:");
+            string s1 = null;
+            do
             {
-                Console.WriteLine("minimum length is 100 please write agian:");
-            }            
+                s1 = Console.ReadLine();
+                if (s1.Length < 100)
+                {
+                    break;
+                }
+                Console.WriteLine("String length exceeds 100: ");
+                Console.WriteLine("write a String again: ");
+            } while (s1.Length > 100);
+
+            int n, n1;
             Console.WriteLine("Enter a start Index n:");
-            int n = Convert.ToInt32(Console.ReadLine());
-             Console.WriteLine("Enter an end index :n1");
-            int n1 = Convert.ToInt32(Console.ReadLine()); 
-            Console.WriteLine(Method12(s1,n,n1));
+            n = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("Enter an end index :n1");
+                n1 = Convert.ToInt32(Console.ReadLine());
+                if (n1 > n)
+                {
+                    break;
+                }
+                Console.WriteLine("Enter an end index again and smaller than Start Index:n1");
+
+            } while (n1 <= n);
+            Console.WriteLine(Method12(s1, n, n1));
         }
 
         public static string Method12(string s1, int n, int n1)
-        {           
-            return(s1.Substring(n, n1));
+        {
+            return (s1.Substring(n, n1));
         }
 
         public static int[] Method11(int[] array1, int rotation)
