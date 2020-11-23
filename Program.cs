@@ -89,8 +89,8 @@ namespace ConsoleApp1
                     break;
                 }
                 Console.WriteLine("Enter an end index again and smaller than Start Index:n1");
-
             } while (n1 <= n);
+
             Console.WriteLine(Method12(s1, n, n1));
         }
 
